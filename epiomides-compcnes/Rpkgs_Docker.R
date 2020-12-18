@@ -1,6 +1,6 @@
 ## Installing packages for Docker image
 
-mypkgs <- c("R.utils","BiocManager","GenomicFeatures", "GenomicRanges", "dplyr", "data.table", "ggplot2", "reshape2", "pheatmap", "RColorBrewer")
+mypkgs <- c("R.utils","BiocManager","GenomicFeatures", "GenomicRanges", "dplyr", "data.table", "ggplot2", "reshape2", "pheatmap", "RColorBrewer", "Gviz", "CNEr")
 logicals <- is.element(mypkgs, installed.packages()[,1])
 tmp <- base::sapply(mypkgs[!logicals], FUN = function(x){
   if(x != "GenomicFeatures" & x != "Gviz" & x != "CNEr" & x != "GenomicRanges")
