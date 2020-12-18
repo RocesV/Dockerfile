@@ -98,7 +98,8 @@ RUN Rscript --vanilla Rpkgs_Docker.R
 
 WORKDIR /home/rocesv/Documents/Docker/CNEs_Docker/
 RUN rm -rf Rpkgs_Docker.R \
-&& rm -rf /tmp/Anaconda3-2020.07-Linux-x86_64.sh
+&& rm -rf /tmp/Anaconda3-2020.07-Linux-x86_64.sh \
+&& mkdir /home/Transfer
 
 #########
 ### Reset
